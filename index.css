@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    letter-spacing: .03em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+}
+
+.webpage-title {
+    background-image: url(https://www.barcelonacodeschool.com/files/pics/cur_files/squares.svg);
+    background-repeat: no-repeat;
+    padding: 110px;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 45px;
+    font-weight: lighter;
+    line-height: 1.2!important;
+    letter-spacing: .03em;
+    color: rgb(51, 51, 51);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 1% 10%;
+}
+
+.nav-bar div a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1em;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin: 0 10%;
+    padding-top: 2em;
+    margin-bottom: 2em;
+    position: flex;
+}
+
+.content-title {
+    font-size: 1.62671rem;
+    line-height: 1.2!important;
+    letter-spacing: .03em;
+    margin-bottom: 5px;
+    margin-left: 10%;
+    padding-bottom: 1em;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Bison,sans-serif;
+    line-height: 1.2!important;
+    letter-spacing: .03em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    margin: 0 10%;    
+}
+
+.blackbox {
+    background-color: black;
+    color: white;
+    padding: 1em 0;
+}
+
+.video {
+    box-shadow: -3px 3px #000;
+    position: relative;
+    overflow: hidden;
+    max-width: fit-content;
+}
+
+.content-style {
+    border: 1px solid grey;
+    box-shadow: -3px 3px #000;
+    padding: 1em;
+    margin-bottom: 1em;
+
+}
+
+.white-box {
+    padding: 1em 0;
+}
+
+.grid8 {
+    margin-left: 10%;
+}
+
+.logo {
+    vertical-align: middle;
+    margin-right: 2%;
+    width: 10%;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin: 0 10%;
+}
+
+.content-title-footer {
+    font-size: 1.62671rem;
+    line-height: 1.2!important;
+    letter-spacing: .03em;
+    margin-bottom: 5px;
+    padding-bottom: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid2{
+      display: grid;
+      grid-template-columns: 1fr; 
+    }
+} 
+
+@media screen and (max-width: 992px) {
+    .grid4 {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+} 
+
+@media screen and (max-width: 600px) {
+    .grid3 {
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+} 
