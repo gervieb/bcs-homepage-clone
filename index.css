@@ -16,17 +16,24 @@ body {
 .webpage-title {
     background-image: url(https://www.barcelonacodeschool.com/files/pics/cur_files/squares.svg);
     background-repeat: no-repeat;
-    padding: 110px;
     margin: 0;
+    padding: 2em 0;
+}
+
+.title-style {
+    text-decoration: none;
+    margin-left: 10%;
 }
 
 h1 {
     font-family: 'Staatliches', cursive;
     font-size: 45px;
-    font-weight: lighter;
+    font-weight: 100;
     line-height: 1.2!important;
     letter-spacing: .03em;
     color: rgb(51, 51, 51);
+    text-align: left;
+    font-size: 3em;
 }
 
 .nav-bar {
@@ -38,6 +45,7 @@ h1 {
     position: sticky;
     top: 0;
     padding: 1% 10%;
+    z-index: 1;
 }
 
 .nav-bar div a {
@@ -46,14 +54,33 @@ h1 {
     margin-right: 1em;
 }
 
+.grid-2-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin: 0 10%;
+    
+}
+
+.grid-2-content-title {
+    font-size: 1.62671rem;
+    line-height: 1.2!important;
+    letter-spacing: .03em;
+    margin-bottom: 5px;
+    padding-bottom: 1em;
+}
+
 .grid2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     margin: 0 10%;
-    padding-top: 2em;
-    margin-bottom: 2em;
-    position: flex;
+    
+}
+
+.grid2 :first-child {
+    grid-column: 1/-1;
+    text-align: left;
 }
 
 .content-title {
@@ -65,14 +92,23 @@ h1 {
     padding-bottom: 1em;
 }
 
+.content-style h3 {
+    border-bottom: 1px solid grey;
+    grid-column: 1/3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 h4 {
     font-size: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2 {
     font-family: Bison,sans-serif;
     line-height: 1.2!important;
     letter-spacing: .03em;
+    font-size: 1.62671rem;
+    font-weight: 700;
 }
 
 p {
@@ -92,33 +128,91 @@ p {
     padding: 1em 0;
 }
 
+h3 {
+    font-size: 1.38316rem;
+    font-family: 'Bison', sans-serif;
+}
+
+.subtitle-style {
+    height: 2em;
+}
+
+.bold {
+    font-weight: 700;
+}
+
 .video {
     box-shadow: -3px 3px #000;
     position: relative;
     overflow: hidden;
-    max-width: fit-content;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
 }
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 .content-style {
     border: 1px solid grey;
     box-shadow: -3px 3px #000;
     padding: 1em;
     margin-bottom: 1em;
+    text-align: left;
 
+}
+
+a {
+    color: inherit;
+    background-color: transparent;
+    /* text-decoration: none; */
+  }
+
+.highlight {
+    background-color: rgb(255, 255, 0);
+}
+
+p.social-media {
+    font-size: 80%;
+    padding-bottom: 1em;
+}
+
+p.social-media a {
+    margin-right: 1em;
+    word-break: break-word;
+    display: inline;
+}
+
+.button {
+    border: 1px solid #000!important;
+    margin: 0;
+    padding: .5em;
+    text-decoration: none;
 }
 
 .white-box {
     padding: 1em 0;
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 2em;
 }
 
 .grid8 {
     margin-left: 10%;
+    position: relative;
 }
 
 .logo {
     vertical-align: middle;
     margin-right: 2%;
     width: 10%;
+    filter: grayscale(100%);
 }
 
 .grid3 {
@@ -126,6 +220,16 @@ p {
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
     margin: 0 10%;
+}
+
+footer a, footer p {
+    font-size: .8em;
+    margin: .5em 0;
+}
+
+footer a {
+    display: block;
+    line-height: 2em;
 }
 
 .content-title-footer {
@@ -136,8 +240,19 @@ p {
     padding-bottom: 1em;
 }
 
-@media only screen and (max-width: 600px) {
+.copyrights {
+    margin-top: 4em;
+}
+
+@media only screen and (max-width: 760px) {
     .grid2{
+      display: grid;
+      grid-template-columns: 1fr; 
+    }
+} 
+
+@media only screen and (max-width: 760px) {
+    .grid-2-content{
       display: grid;
       grid-template-columns: 1fr; 
     }
@@ -150,9 +265,27 @@ p {
     }
 } 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
     .grid3 {
         display: grid;
         grid-template-columns: 1fr; 
     }
 } 
+
+@media (max-width: 520px) {
+    .title-style {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 450px) {
+    .title-style {
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 150px) {
+    .title-style {
+        font-size: 0.3em;
+    }
+}
