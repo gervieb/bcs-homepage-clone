@@ -27,7 +27,6 @@ body {
 
 h1 {
     font-family: 'Staatliches', cursive;
-    font-size: 45px;
     font-weight: 100;
     line-height: 1.2!important;
     letter-spacing: .03em;
@@ -171,7 +170,7 @@ h3 {
 a {
     color: inherit;
     background-color: transparent;
-    /* text-decoration: none; */
+    
   }
 
 .highlight {
@@ -212,7 +211,7 @@ p.social-media a {
     vertical-align: middle;
     margin-right: 2%;
     width: 10%;
-    filter: grayscale(100%);
+    filter: grayscale(60%);
 }
 
 .grid3 {
